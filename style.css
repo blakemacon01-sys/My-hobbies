@@ -1,21 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
     color: #333;
-    margin: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #2563eb, #06b6d4);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
 }
 
 nav {
-    background: #333;
-    padding: 10px;
+    background: #1f2937;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-right: 15px;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-h1 {
-    color: #0066cc;
+nav a:hover {
+    color: #38bdf8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 6px 15px rgba(0,0,0,.15);
+    transition: transform .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
