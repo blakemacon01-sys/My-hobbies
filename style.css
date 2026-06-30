@@ -5,16 +5,22 @@ body {
     color: #333;
 }
 
-header {
-    background:
-    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-    url("images/PXL_20260616_102320228.jpg");
 
-background-size: cover;
-background-position: center;
+    header {
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("images/PXL_20260616_102320228.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     color: white;
     text-align: center;
     padding: 60px 20px;
+
+    animation: gradientMove 10s ease infinite;
+    }
 }
 
 header h1 {
@@ -149,10 +155,7 @@ header h1 {
 
 /* Hero background animation */
 
-header {
-    background-size: 200% 200%;
-    animation: gradientMove 10s ease infinite;
-}
+
 
 @keyframes gradientMove {
 
