@@ -30,7 +30,20 @@ header h1 {
 header p {
     font-size: 20px;
 }
+header a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+}
 
+header a:hover {
+    background: white;
+    color: #1f2937;
+}
 nav {
     background: #1f2937;
     display: flex;
