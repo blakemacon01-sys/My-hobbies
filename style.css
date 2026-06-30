@@ -17,7 +17,7 @@ body {
 
     color: white;
     text-align: center;
-    padding: 120px 20px;
+    padding: 220px 20px;
 
     animation: zoomBackground 15s ease-in-out infinite;
     }
@@ -157,17 +157,15 @@ header h1 {
 
 
 @keyframes zoomBackground {
-
     0% {
         background-size: 100%;
     }
 
     50% {
-        background-size: 110%;
+        background-size: 103%;
     }
 
     100% {
         background-size: 100%;
     }
-
 }
