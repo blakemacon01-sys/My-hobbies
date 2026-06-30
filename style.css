@@ -74,3 +74,93 @@ footer {
     display: block;
     margin: 15px auto;
 }
+/* Smooth scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade animation */
+
+.card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .7s ease;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover effect */
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.25);
+}
+
+/* Navigation */
+
+nav a {
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+/* Buttons */
+
+button,
+.btn {
+    transition: .3s;
+}
+
+button:hover,
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Header */
+
+header h1 {
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Hero background animation */
+
+header {
+    background-size: 200% 200%;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+
+    0% {
+        background-position: left;
+    }
+
+    50% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+
+}
