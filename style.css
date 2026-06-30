@@ -6,7 +6,12 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #2563eb, #06b6d4);
+    background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url("images/PXL_20260616_102320228.jpg");
+
+background-size: cover;
+background-position: center;
     color: white;
     text-align: center;
     padding: 60px 20px;
