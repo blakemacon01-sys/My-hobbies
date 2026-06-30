@@ -17,7 +17,8 @@ body {
 
     color: white;
     text-align: center;
-    padding: 220px 20px;
+    padding: 180px 20px;
+    
 
     animation: zoomBackground 15s ease-in-out infinite;
     }
@@ -171,6 +172,13 @@ header h1 {
 
 @keyframes zoomBackground {
     0%   { background-size: 100%; }
-    50%  { background-size: 105%; }
+    50% { background-size: 108%; }
     100% { background-size: 100%; }
+}
+@media (max-width: 768px) {
+    header {
+        background-position: center center;
+        background-size: cover;
+        padding: 180px 20px;
+    }
 }
