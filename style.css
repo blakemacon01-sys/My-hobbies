@@ -193,26 +193,25 @@ body.about-page {
     color: white;
 
     background:
-        radial-gradient(circle at 20% 20%, #6d28d9 0%, transparent 35%),
-        radial-gradient(circle at 80% 30%, #2d0b59 0%, transparent 30%),
-        radial-gradient(circle at 30% 80%, #000000 0%, transparent 40%),
-        linear-gradient(135deg, #000000, #14002b, #3b0764, #000000);
-
-    background-size: 300% 300%;
-    animation: swirl 15s ease infinite;
+    radial-gradient(circle at 15% 20%, rgba(0,0,0,.9) 0%, transparent 35%),
+    radial-gradient(circle at 85% 70%, rgba(0,0,0,.8) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(70,0,160,.9) 0%, #4b1fa8 40%, #25003d 100%);
+    background-size: 220% 220%;
+    animation: swirl 20s ease-in-out infinite;
 }
 }
 
 @keyframes swirl {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 40%, 100% 60%, 50% 50%;
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 60%, 0% 40%, 60% 40%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 40%, 100% 60%, 50% 50%;
     }
+}
 }
 .about-page h1,
 .about-page p {
