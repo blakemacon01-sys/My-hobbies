@@ -182,15 +182,23 @@ header h1 {
         padding: 180px 20px;
     }
 }
-.about-page {
+html,
+body.about-page {
+    min-height: 100%;
+}
+
+body.about-page {
+    margin: 0;
     min-height: 100vh;
     color: white;
-    padding: 60px 20px;
-    background: linear-gradient(-45deg,
+
+    background: linear-gradient(
+        -45deg,
         #000000,
         #2d0b59,
         #5b21b6,
-        #111111);
+        #111111
+    );
     background-size: 400% 400%;
     animation: swirl 15s ease infinite;
 }
@@ -205,4 +213,8 @@ header h1 {
     100% {
         background-position: 0% 50%;
     }
+}
+.about-page h1,
+.about-page p {
+    color: white;
 }
