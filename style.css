@@ -192,15 +192,15 @@ body.about-page {
     min-height: 100vh;
     color: white;
 
-    background: linear-gradient(
-        -45deg,
-        #000000,
-        #2d0b59,
-        #5b21b6,
-        #111111
-    );
-    background-size: 400% 400%;
+    background:
+        radial-gradient(circle at 20% 20%, #6d28d9 0%, transparent 35%),
+        radial-gradient(circle at 80% 30%, #2d0b59 0%, transparent 30%),
+        radial-gradient(circle at 30% 80%, #000000 0%, transparent 40%),
+        linear-gradient(135deg, #000000, #14002b, #3b0764, #000000);
+
+    background-size: 300% 300%;
     animation: swirl 15s ease infinite;
+}
 }
 
 @keyframes swirl {
