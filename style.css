@@ -218,3 +218,18 @@ body.about-page {
 .about-page p {
     color: white;
 }
+.about-content {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 35px;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 30px rgba(123, 31, 162, 0.4);
+}
+
+.about-content h1,
+.about-content p {
+    color: white;
+}
